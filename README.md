@@ -6,14 +6,17 @@
 1. [Project Overview](#project-overview)
 2. [Tech Stack](#tech-stack)
 3. [Model Choice and Evaluation](#model-choice-and-evaluation)
-6. [Setup and Installation](#setup-and-installation)
+6. [Installation](#installation)
 7. [Result](#results)
 
 ## Project Overview
 
-This project is a phonics speech recognition system that leverages machine learning to classify phonics sounds from audio data. The model was trained on MFCC features extracted from audio recordings and tested on different classification algorithms to identify the most accurate model. The focus was on recognizing phonetic sounds from the English alphabet for educational purposes, particularly aimed at improving language learning.
+This is a project on Speech Recognition, focusing on predicting the 26 alphabet sounds (Phonics) using machine learning models. It was developed as part of my undergraduate thesis, with the primary goal of helping systems better understand spoken letters from both native and non-native English speakers. The model was trained using MFCC features extracted from audio recordings and evaluated across different classification algorithms to determine the most accurate one. The project specifically targets the recognition of phonetic sounds from the English alphabet for educational purposes, particularly to support language learning.
 
-
+The dataset consists of ``26 phonics (A–Z)`` collected from:
+- **Native speakers**, sourced from YouTube videos and phonics pronunciation websites.
+- **Non-native speakers**, recorded from 10 volunteers (Indonesian students) with different ethnic backgrounds—such as Javanese and Melayu to observe whether there are differences in how the English alphabet is pronounced across local accents.
+  
 ## Tech Stack
 
 **Programming Language**: Python
@@ -37,22 +40,25 @@ In the development of this project, I tested three machine learning models to de
 Ultimately, **SVM** was chosen for its precision and ability to handle the feature complexity in phonics recognition.
 
 
-## Setup and Installation
+## Installation
 
-To run the project locally, follow these steps:
+1. **Clone the Repository**
+First, clone the repository to your local machine:
+```
+git clone https://github.com/your-username/phonics-recognition.git
+cd phonics-recognition
+```
 
-1. **Clone the Repository**  
-   ```bash
-   git clone https://github.com/yourusername/phonics-recognition.git
-   ```
+2. **Install Dependencies**
+You can install required dependencies manually:
+```
+pip install joblib scikit-learn librosa numpy
+```
 
-2. Install Dependencies
-   ```
-   pip install -r requirements.txt
-   ```
-
-3. Prepare the Data
-You’ll need to have the phonics audio dataset available. Ensure you have the ``audio files`` and the necessary feature extraction scripts.
+3.  **Running the Project**
+```
+python predict.py
+```
 
 ## Results
 
