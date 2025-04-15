@@ -3,13 +3,11 @@
 
 
 ## Table of Contents
-1. [Background](#background)
-2. [Tools and Framworks](#tools-and-frameworks)
-3. [How It Works](#how-it-works)
-6. [Challenges & Learnings](#challenges--learnings)
-7. [How to Run Locally](#how-to-run-locally)
-8. [About Me](#about-me)
-9. [Final Note](#final-note)
+1. [Project Overview](#project-overview)
+2. [Tech Stack](#tech-stack)
+3. [Model Choice and Evaluation](#model-choice-and-evaluation)
+6. [Setup and Installation](#setup-and-installation)
+7. [Result](#results)
 
 ## Project Overview
 
@@ -68,7 +66,7 @@ The **SVM model** outperformed **Random Forest** and **K-Nearest Neighbors** in 
   - **Predicted:** 'h'  
   - **Actual:** 'b'
 
-![Phonics Prediction Comparison](images/phonics_comparison.png)
+![Phonics Prediction Comparison](phonics_comparison.png)
 
 This shows the strength of the **SVM** model in recognizing subtle phonetic differences.
 
